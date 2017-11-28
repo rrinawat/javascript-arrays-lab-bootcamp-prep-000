@@ -27,3 +27,13 @@ function prependKitten(name){
   var morekittens = [`${name}`,...kittens]
   return morekittens
 }
+
+function removeLastKitten(name){
+  var lesskittens = kittens.slice(0, kittens.length-1)
+  return lesskittens
+}
+
+function removeFirstKitten(name){
+  var lesskittens = kittens.slice(1)
+  return lesskittens
+}
